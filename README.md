@@ -1,4 +1,4 @@
-# Brie.fi/ng
+# Multimedia Over IP
 
 > Choose your language: [en](README.md) | [de](README-de.md)
 
