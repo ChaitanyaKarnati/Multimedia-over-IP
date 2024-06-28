@@ -1,0 +1,19 @@
+# Please read https://github.com/holtwick/briefing/blob/master/docs/docker.md for proper use of Docker
+
+version: '3'
+
+services:
+  briefing:
+    build: .
+    restart: always
+    volumes:
+      - ./dist:/app/dist
+      - ./www:/app/www
+      - ./data:/app/data
+    env_file:
+      - docker-zerva.env
+
+networks:
+  default:
+    external:
+      name: proxy
